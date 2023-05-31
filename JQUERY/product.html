@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ecommerce App</title>
+  <link rel="stylesheet" type="text/css" href="pstyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css" integrity="sha512-NXUhxhkDgZYOMjaIgd89zF2w51Mub53Ru3zCNp5LTlEzMbNNAjTjDbpURYGS5Mop2cU4b7re1nOIucsVlrx9fA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css?family=Amarante" rel="stylesheet">
+
+  <script type="text/javascript" src="cart.js"></script>
+</head>
+  <body>
+    <div class='header'>
+      <div class='title'>
+        <h1 style="color:azure">E-HUB</h1>&nbsp;&nbsp;&nbsp;
+        <a href="index.html" style="color:azure">HOME</a>
+        <a href="product.html" style="color:azure">PRODUCTS</a>
+        <a href="about.html" style="color:azure">ABOUT US </a>
+        <a href="contact.html" style="color:azure">CONTACT US</a>
+
+        <p>
+          <strong style="color:azure">Cart:</strong>
+          <a href="cart.html" id="cart_value" style="color:azure"></a>
+          <a href="" class="clear_cart" style="color:azure" ><i class="far fa-trash-alt"></i></a>
+        </p>
+      </div>
+    </div>
+    <div class='body'>
+      <div class='container'>
+        <div class='card' id="first_product">
+          <div class='card-content'>
+            <div class='top-bar'>
+              ₹
+              <span class="price">
+                3900
+              </span>
+              <span class='float-right lnr lnr-heart'></span>
+              <a href="#" class="add_to_cart cart_button ml-3" id="first">
+                Add To Cart
+              </a>
+            </div>
+            <div class='img'>
+              <img src='watch.jpg'>
+            </div>
+          </div>
+          <div class='card-description'>
+            <div class='title'>
+              LOUIS DEVIN 
+            </div>
+            <div class='cart'>
+              <span class='lnr lnr-cart'></span>
+            </div>
+          </div>
+          <div class='card-footer'>
+            <div class='span'>
+              <b style="color: black;">Analog Wrist Watch</b> 
+            </div>
+            
+          </div>
+        </div>
+        <div class='card' id="second_product">
+          <div class='card-content'>
+            <div class='top-bar'>
+              ₹
+              <span class="price">
+                4500
+              </span>
+              <span class='float-right lnr lnr-heart'></span>
+              <a href="#" class="add_to_cart cart_button ml-3" id="second">
+                Add To Cart
+              </a>
+            </div>
+            <div class='img'>
+              <img src='applei.jpg'>
+            </div>
+          </div>
+          <div class='card-description'>
+            <div class='title'>
+              Apple iPhone 14
+            </div>
+            <div class='cart'>
+              <span class='lnr lnr-cart'></span>
+            </div>
+          </div>
+          <div class='card-footer'>
+            <div class='span' >
+              <b style="color: black;">All-day battery life</b>
+            </div>
+           
+          </div>
+        </div>
+        <div class='card' id="third_product">
+          <div class='card-content'>
+            <div class='top-bar'>
+              ₹
+              <span class="price">
+                34600
+              </span>
+              <span class='float-right lnr lnr-heart'></span>
+              <a href="#" class="add_to_cart cart_button ml-3" id="third">
+                Add To Cart
+              </a>
+            </div>
+            <div class='img'>
+              <img src='vivo y56.jpg'>
+            </div>
+          </div>
+          <div class='card-description'>
+            <div class='title'>
+              VIVO Y56 5G
+            </div>
+            <div class='cart'>
+              <span class='lnr lnr-cart'></span>
+            </div>
+          </div>
+          <div class='card-footer'>
+            <div class='span'>
+             <b style="color: black;">FunTouch OS 12</b> 
+            </div>
+          
+          </div>
+        </div>
+       
+        <div class='card' id="fourth_product">
+          <div class='card-content'>
+            <div class='top-bar'>
+              ₹
+              <span class="price">
+                5600
+              </span>
+              <span class='float-right lnr lnr-heart'></span>
+              <a href="#" class="add_to_cart cart_button ml-3" id="fourth">
+                Add To Cart
+              </a>
+            </div>
+            <div class='img'>
+              <img src='vivov23.jpg'>
+            </div>
+          </div>
+          <div class='card-description'>
+            <div class='title'>
+              Vivo V23
+            </div>
+            <div class='cart'>
+              <span class='lnr lnr-cart'></span>
+            </div>
+          </div>
+          <div class='card-footer'>
+            <div class='span'>
+             <b style="color: black;">Mediatek Dimensity 920 Processor</b> 
+            </div>
+         
+          </div>
+        </div>
+        <!---->
+        <div class='card' id="five_product">
+          <div class='card-content'>
+            <div class='top-bar'>
+              ₹
+              <span class="price">
+                4500
+              </span>
+              <span class='float-right lnr lnr-heart'></span>
+              <a href="#" class="add_to_cart cart_button ml-3" id="five">
+                Add To Cart
+              </a>
+            </div>
+            <div class='img'>
+              <img src='https://www.bell.ca/Styles/wireless/all_languages/all_regions/catalog_images/large/iPhoneX_spgry-en_lrg.png'>
+            </div>
+          </div>
+          <div class='card-description'>
+            <div class='title'>
+              IPHONE X
+            </div>
+            <div class='cart'>
+              <span class='lnr lnr-cart'></span>
+            </div>
+          </div>
+          <div class='card-footer'>
+            <div class='span'>
+             <b style="color: black;">A15 Bionic chip </b> 
+            </div>
+            
+          </div>
+        </div>
+         <!---->
+         <div class='card' id="four_product">
+          <div class='card-content'>
+            <div class='top-bar'>
+              ₹
+              <span class="price">
+                34600
+              </span>
+              <span class='float-right lnr lnr-heart'></span>
+              <a href="#" class="add_to_cart cart_button ml-3" id="four">
+                Add To Cart
+              </a>
+            </div>
+            <div class='img'>
+              <img src='tab.jpg'>
+            </div>
+          </div>
+          <div class='card-description'>
+            <div class='title'>
+              GRAPHIC TAB
+            </div>
+            <div class='cart'>
+              <span class='lnr lnr-cart'></span>
+            </div>
+          </div>
+          <div class='card-footer'>
+            <div class='span'>
+              <b style="color: black;">Fast & Effective </b>
+            </div>
+            
+          </div>
+        </div>
+            
+        <!----->
+      </div>
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js" integrity="sha512-lOrm9FgT1LKOJRUXF3tp6QaMorJftUjowOWiDcG5GFZ/q7ukof19V0HKx/GWzXCdt9zYju3/KhBNdCLzK8b90Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>

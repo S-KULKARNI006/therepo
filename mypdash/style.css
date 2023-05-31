@@ -1,0 +1,40 @@
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    padding: 20px;
+    background-color: #03d9ff;
+  }
+  #content {
+    margin-left: 250px; /* Adjust this value to match the width of the sidebar */
+    padding: 20px;
+  }
+  .nav-link{
+    color: black;
+  }
+  @media (max-width: 768px) {
+    #sidebar {
+      width: 100%;
+      position: static;
+      height: auto;
+    }
+
+    #content {
+      margin-left: 0;
+    }  
+}
+.table-responsive {
+    overflow-x: auto;
+  }
+  #content {
+    background-color: #90f8ff;
+    /* Add your desired background color value */
+  }
+  .card:hover{
+    transform: scale(1.15);
+  }
+
+
+  
